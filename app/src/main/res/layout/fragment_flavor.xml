@@ -67,6 +67,7 @@
                     android:id="@+id/salted_caramel"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:checked="@{viewModel.flavor.equals(@string/salted_caramel)}"
                     android:text="@string/salted_caramel" />
 
                 <RadioButton
