@@ -20,6 +20,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
+import androidx.databinding.DataBindingUtil
+import androidx.databinding.ViewDataBinding
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.activityViewModels
 import androidx.navigation.fragment.findNavController
@@ -42,7 +44,11 @@ class FlavorFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val fragmentBinding = FragmentFlavorBinding.inflate(inflater, container, false)
+        val fragmentBinding = FragmentFlavorBinding.inflate(
+            inflater,
+            container,
+            false
+        )
         binding = fragmentBinding
         return fragmentBinding.root
     }
@@ -53,6 +59,7 @@ class FlavorFragment : Fragment() {
         binding?.apply {
             nextButton.setOnClickListener { goToNextScreen() }
         }
+        binding?.viewModel = sharedViewModel
     }
 
     /**
