@@ -39,7 +39,7 @@
     <fragment
         android:id="@+id/pickupFragment"
         android:name="com.example.cupcake.fragments.PickupFragment"
-        android:label="fragment_pickup"
+        android:label="@string/choose_pickup_date"
         tools:layout="@layout/fragment_pickup" >
         <action
             android:id="@+id/action_pickupFragment_to_summaryFragment"
