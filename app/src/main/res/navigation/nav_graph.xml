@@ -48,6 +48,6 @@
     <fragment
         android:id="@+id/summaryFragment"
         android:name="com.example.cupcake.fragments.SummaryFragment"
-        android:label="fragment_summary"
+        android:label="@string/order_summary"
         tools:layout="@layout/fragment_summary" />
 </navigation>
