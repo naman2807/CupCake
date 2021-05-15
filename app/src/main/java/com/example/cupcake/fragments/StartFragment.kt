@@ -68,6 +68,9 @@ class StartFragment : Fragment() {
      */
     fun orderCupcake(quantity: Int) {
         sharedViewModel.setQuantity(quantity)
+        if(sharedViewModel.isFlavorSet()){
+            sharedViewModel.setFlavor(getString(R.string.vanilla))
+        }
         findNavController().navigate(R.id.action_startFragment_to_flavorFragment)
     }
 
