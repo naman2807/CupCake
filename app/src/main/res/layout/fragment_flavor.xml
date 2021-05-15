@@ -60,6 +60,7 @@
                     android:id="@+id/red_velvet"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:checked="@{viewModel.flavor.equals(@string/red_velvet)}"
                     android:text="@string/red_velvet" />
 
                 <RadioButton
