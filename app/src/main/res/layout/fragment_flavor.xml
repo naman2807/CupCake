@@ -46,13 +46,14 @@
                     android:id="@+id/vanilla"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:checked="@{viewModel.flavor.equals(@string/vanilla)"
+                    android:checked="@{viewModel.flavor.equals(@string/vanilla)}"
                     android:text="@string/vanilla" />
 
                 <RadioButton
                     android:id="@+id/chocolate"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:checked="@{viewModel.flavor.equals(@string/chocolate)}"
                     android:text="@string/chocolate" />
 
                 <RadioButton
