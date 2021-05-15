@@ -21,14 +21,22 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.activityViewModels
+import androidx.lifecycle.ViewModel
 import androidx.navigation.fragment.findNavController
 import com.example.cupcake.R
 import com.example.cupcake.databinding.FragmentStartBinding
+import com.example.cupcake.model.OrderViewModel
 
 /**
  * This is the first screen of the Cupcake app. The user can choose how many cupcakes to order.
  */
 class StartFragment : Fragment() {
+    //viewModels() gives you the ViewModel instance scoped to the current fragment.
+    // This will be different for different fragments.
+    //activityViewModels() gives you the ViewModel instance scoped to the current activity.
+    // Therefore the instance will remain the same across multiple fragments in the same activity
+    private val sharedViewModel : OrderViewModel by activityViewModels()
 
     // Binding object instance corresponding to the fragment_start.xml layout
     // This property is non-null between the onCreateView() and onDestroyView() lifecycle callbacks,
