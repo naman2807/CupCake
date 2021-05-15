@@ -20,4 +20,8 @@ class OrderViewModel : ViewModel() {
     fun setQuantity(numberCupCakes : Int){
         _quantity.value = numberCupCakes
     }
+
+    fun setFlavor(flavor : String){
+        _flavor.value = flavor
+    }
 }
