@@ -17,7 +17,7 @@
 <!-- Layout for order summary -->
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    tools:context=".SummaryFragment">
+    tools:context=".fragments.SummaryFragment">
 
     <ScrollView
         android:layout_width="match_parent"

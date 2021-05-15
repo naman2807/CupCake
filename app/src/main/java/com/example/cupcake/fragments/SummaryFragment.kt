@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.example.cupcake
+package com.example.cupcake.fragments
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -21,23 +21,24 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Toast
 import androidx.fragment.app.Fragment
-import com.example.cupcake.databinding.FragmentPickupBinding
+import com.example.cupcake.databinding.FragmentSummaryBinding
 
 /**
- * [PickupFragment] allows the user to choose a pickup date for the cupcake order.
+ * [SummaryFragment] contains a summary of the order details with a button to share the order
+ * via another app.
  */
-class PickupFragment : Fragment() {
+class SummaryFragment : Fragment() {
 
-    // Binding object instance corresponding to the fragment_pickup.xml layout
+    // Binding object instance corresponding to the fragment_summary.xml layout
     // This property is non-null between the onCreateView() and onDestroyView() lifecycle callbacks,
     // when the view hierarchy is attached to the fragment.
-    private var binding: FragmentPickupBinding? = null
+    private var binding: FragmentSummaryBinding? = null
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
-        val fragmentBinding = FragmentPickupBinding.inflate(inflater, container, false)
+        val fragmentBinding = FragmentSummaryBinding.inflate(inflater, container, false)
         binding = fragmentBinding
         return fragmentBinding.root
     }
@@ -46,15 +47,15 @@ class PickupFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
 
         binding?.apply {
-            nextButton.setOnClickListener { goToNextScreen() }
+            sendButton.setOnClickListener { sendOrder() }
         }
     }
 
     /**
-     * Navigate to the next screen to see the order summary.
+     * Submit the order by sharing out the order details to another app via an implicit intent.
      */
-    fun goToNextScreen() {
-        Toast.makeText(activity, "Next", Toast.LENGTH_SHORT).show()
+    fun sendOrder() {
+        Toast.makeText(activity, "Send Order", Toast.LENGTH_SHORT).show()
     }
 
     /**
