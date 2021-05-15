@@ -20,7 +20,9 @@
     tools:context=".fragments.SummaryFragment">
 
     <data>
-
+        <variable
+            name="viewModel"
+            type="com.example.cupcake.model.OrderViewModel" />
     </data>
 
     <ScrollView
