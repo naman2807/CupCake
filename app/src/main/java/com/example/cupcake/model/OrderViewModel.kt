@@ -24,4 +24,8 @@ class OrderViewModel : ViewModel() {
     fun setFlavor(flavor : String){
         _flavor.value = flavor
     }
+
+    fun setDate(pickDate : String){
+        _date.value = pickDate
+    }
 }
