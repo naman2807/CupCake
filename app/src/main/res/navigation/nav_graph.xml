@@ -31,7 +31,11 @@
         android:id="@+id/flavorFragment"
         android:name="com.example.cupcake.fragments.FlavorFragment"
         android:label="fragment_flavor"
-        tools:layout="@layout/fragment_flavor" />
+        tools:layout="@layout/fragment_flavor" >
+        <action
+            android:id="@+id/action_flavorFragment_to_pickupFragment"
+            app:destination="@id/pickupFragment" />
+    </fragment>
     <fragment
         android:id="@+id/pickupFragment"
         android:name="com.example.cupcake.fragments.PickupFragment"
