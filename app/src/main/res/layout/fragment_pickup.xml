@@ -21,7 +21,9 @@
     tools:context=".fragments.PickupFragment">
 
     <data>
-
+        <variable
+            name="viewModel"
+            type="com.example.cupcake.model.OrderViewModel" />
     </data>
     <ScrollView
         android:layout_width="match_parent"
