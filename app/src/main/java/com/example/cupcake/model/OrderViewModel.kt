@@ -5,4 +5,5 @@ import androidx.lifecycle.ViewModel
 
 class OrderViewModel : ViewModel() {
     private val _quantity = MutableLiveData<Int>(0)
+    private val _flavor = MutableLiveData<String>("")
 }
