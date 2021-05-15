@@ -15,4 +15,5 @@ class OrderViewModel : ViewModel() {
     val date : LiveData<String> get() = _date
 
     private val _price = MutableLiveData<Double>(0.0)
+    val price : LiveData<Double> get() = _price
 }
