@@ -32,4 +32,8 @@ class OrderViewModel : ViewModel() {
     fun isFlavorSet() : Boolean{
         return _flavor.value.isNullOrEmpty()
     }
+
+    private fun getPickOptions():List<String>?{
+        return null
+    }
 }
