@@ -22,6 +22,10 @@ class OrderViewModel : ViewModel() {
 
     val dateOptions = getPickOptions()
 
+    init {
+
+    }
+
     fun setQuantity(numberCupCakes : Int){
         _quantity.value = numberCupCakes
     }
