@@ -50,6 +50,9 @@ class OrderViewModel : ViewModel() {
     }
 
     private fun resetOrder(){
-
+        _quantity.value = 0
+        _flavor.value = ""
+        _date.value = dateOptions[0]
+        _price.value = 0.0
     }
 }
