@@ -61,7 +61,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:checked="@{viewModel.date.equals(viewModel.dateOptions[2])}"
-                    android:text="@string/saturday" />
+                    android:text="@{viewModel.dateOptions[2]}"/>
 
                 <RadioButton
                     android:id="@+id/option3"
