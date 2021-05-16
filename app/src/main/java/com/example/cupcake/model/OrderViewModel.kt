@@ -39,5 +39,6 @@ class OrderViewModel : ViewModel() {
     private fun getPickOptions():List<String>{
         val options = mutableListOf<String>()
         val formatter = SimpleDateFormat("E, MMM d", Locale.getDefault())
+        val calender = Calendar.getInstance()
     }
 }
