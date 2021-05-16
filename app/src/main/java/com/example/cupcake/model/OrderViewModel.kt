@@ -42,6 +42,7 @@ class OrderViewModel : ViewModel() {
         val calender = Calendar.getInstance()
         repeat(4){
             options.add(formatter.format(calender.time))
+            calender.add(Calendar.DATE, 1)
         }
     }
 }
