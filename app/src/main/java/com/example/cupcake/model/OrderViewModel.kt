@@ -40,5 +40,8 @@ class OrderViewModel : ViewModel() {
         val options = mutableListOf<String>()
         val formatter = SimpleDateFormat("E, MMM d", Locale.getDefault())
         val calender = Calendar.getInstance()
+        repeat(4){
+            options.add(formatter.format(calender.time))
+        }
     }
 }
