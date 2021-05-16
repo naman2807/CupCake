@@ -3,6 +3,9 @@ package com.example.cupcake.model
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
+import java.text.SimpleDateFormat
+import java.time.format.DateTimeFormatter
+import java.util.*
 
 class OrderViewModel : ViewModel() {
     private val _quantity = MutableLiveData<Int>(0)
@@ -35,5 +38,6 @@ class OrderViewModel : ViewModel() {
 
     private fun getPickOptions():List<String>{
         val options = mutableListOf<String>()
+        val formatter = SimpleDateFormat("E, MMM d", Locale.getDefault())
     }
 }
