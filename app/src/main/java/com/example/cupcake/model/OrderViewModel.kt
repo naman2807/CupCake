@@ -33,7 +33,7 @@ class OrderViewModel : ViewModel() {
         return _flavor.value.isNullOrEmpty()
     }
 
-    private fun getPickOptions():List<String>?{
-        return null
+    private fun getPickOptions():List<String>{
+        val options = mutableListOf<String>()
     }
 }
