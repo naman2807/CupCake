@@ -8,16 +8,16 @@ import java.time.format.DateTimeFormatter
 import java.util.*
 
 class OrderViewModel : ViewModel() {
-    private val _quantity = MutableLiveData<Int>(0)
+    private val _quantity = MutableLiveData<Int>()
     val quantity : LiveData<Int> get() = _quantity
 
-    private val _flavor = MutableLiveData<String>("")
+    private val _flavor = MutableLiveData<String>()
     val flavor : LiveData<String> get() = _flavor
 
-    private val _date = MutableLiveData<String>("")
+    private val _date = MutableLiveData<String>()
     val date : LiveData<String> get() = _date
 
-    private val _price = MutableLiveData<Double>(0.0)
+    private val _price = MutableLiveData<Double>()
     val price : LiveData<Double> get() = _price
 
     val dateOptions = getPickOptions()

@@ -58,6 +58,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="@dimen/order_summary_margin"
+                    android:text="@{viewModel.quantity.toString()}"
                     tools:text="6 cupcakes" />
 
                 <View
