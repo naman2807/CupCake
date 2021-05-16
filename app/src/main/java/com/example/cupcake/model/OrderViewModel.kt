@@ -44,5 +44,6 @@ class OrderViewModel : ViewModel() {
             options.add(formatter.format(calender.time))
             calender.add(Calendar.DATE, 1)
         }
+        return options
     }
 }
