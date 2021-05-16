@@ -48,4 +48,8 @@ class OrderViewModel : ViewModel() {
         }
         return options
     }
+
+    private fun resetOrder(){
+
+    }
 }
