@@ -61,6 +61,7 @@ class SummaryFragment : Fragment() {
      * Submit the order by sharing out the order details to another app via an implicit intent.
      */
     fun sendOrder() {
+        val numberOfCupcakes = sharedViewModel.quantity.value ?: 0
         val orderSummary = getString(
                 R.string.order_details,
                 sharedViewModel.quantity.value.toString(),
