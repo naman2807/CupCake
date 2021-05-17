@@ -15,6 +15,8 @@
  */
 package com.example.cupcake.fragments
 
+import android.app.Notification
+import android.content.Intent
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -66,6 +68,11 @@ class SummaryFragment : Fragment() {
                 sharedViewModel.date.value.toString(),
                 sharedViewModel.price.value.toString()
         )
+
+        val intent = Intent(Intent.ACTION_SEND)
+                .setType("text/plain")
+                .putExtra(Intent.EXTRA_SUBJECT, getString(R.string.order_cupcakes))
+                .putExtra(Intent.EXTRA_TEXT, orderSummary)
     }
 
     fun cancelOrder(){
