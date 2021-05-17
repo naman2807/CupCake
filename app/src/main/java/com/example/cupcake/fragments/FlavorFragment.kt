@@ -67,6 +67,10 @@ class FlavorFragment : Fragment() {
         findNavController().navigate(R.id.action_flavorFragment_to_pickupFragment)
     }
 
+    fun cancelOrder(){
+
+    }
+
     /**
      * This fragment lifecycle method is called when the view hierarchy associated with the fragment
      * is being removed. As a result, clear out the binding object.
