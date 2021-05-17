@@ -60,6 +60,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
                 android:layout_marginTop="@dimen/margin_between_elements"
+                android:onClick="@{() -> startFragment.orderCupcake(1)}"
                 android:minWidth="@dimen/order_cupcake_button_width"
                 android:text="@string/one_cupcake" />
 
