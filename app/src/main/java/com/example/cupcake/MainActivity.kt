@@ -37,5 +37,7 @@ class MainActivity : AppCompatActivity(R.layout.activity_main){
         setupActionBarWithNavController(navController)
     }
 
-
+    override fun onNavigateUp(): Boolean {
+        return navController.navigateUp() || super.onNavigateUp()
+    }
 }
