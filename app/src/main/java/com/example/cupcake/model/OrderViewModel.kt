@@ -45,7 +45,7 @@ class OrderViewModel : ViewModel() {
     }
 
     private fun updatePrice(){
-
+        _price.value = (quantity.value ?: 0) *(PRICE_PER_CUP_CAKE)
     }
 
     private fun getPickOptions():List<String>{
