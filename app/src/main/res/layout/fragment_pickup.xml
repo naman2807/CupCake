@@ -24,6 +24,9 @@
         <variable
             name="viewModel"
             type="com.example.cupcake.model.OrderViewModel" />
+        <variable
+            name="pickupFragment"
+            type="com.example.cupcake.fragments.PickupFragment" />
     </data>
     <ScrollView
         android:layout_width="match_parent"
