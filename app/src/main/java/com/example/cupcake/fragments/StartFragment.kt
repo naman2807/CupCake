@@ -54,7 +54,18 @@ class StartFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        // 1 way to apply onClickListener to buttons in code.
+//        binding?.apply {
+//            // Set up the button click listeners
+//            orderOneCupcake.setOnClickListener { orderCupcake(1) }
+//            orderSixCupcakes.setOnClickListener { orderCupcake(6) }
+//            orderTwelveCupcakes.setOnClickListener { orderCupcake(12) }
+//        }
+
+        // 2 way to apply onClickListener to buttons in layout file using listener binding
         binding?.startFragment = this
+
     }
 
     /**
