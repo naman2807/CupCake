@@ -23,6 +23,9 @@
         <variable
             name="viewModel"
             type="com.example.cupcake.model.OrderViewModel" />
+        <variable
+            name="flavorFragment"
+            type="com.example.cupcake.fragments.FlavorFragment" />
     </data>
 
     <ScrollView
