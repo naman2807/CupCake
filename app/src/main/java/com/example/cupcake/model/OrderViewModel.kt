@@ -21,7 +21,7 @@ class OrderViewModel : ViewModel() {
     val date : LiveData<String> get() = _date
 
     private val _price = MutableLiveData<Double>()
-    val price : LiveData<Double> get() = _price
+    val price : LiveData<String> get() = _price
 
     val dateOptions = getPickOptions()
 
