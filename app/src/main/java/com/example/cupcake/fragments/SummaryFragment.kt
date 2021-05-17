@@ -48,12 +48,9 @@ class SummaryFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
-        binding?.apply {
-            sendButton.setOnClickListener { sendOrder() }
-        }
         binding?.viewModel = sharedViewModel
         binding?.lifecycleOwner = viewLifecycleOwner
+        binding?.summaryFragment = this
     }
 
     /**
