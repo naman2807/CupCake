@@ -55,5 +55,9 @@
         android:id="@+id/summaryFragment"
         android:name="com.example.cupcake.fragments.SummaryFragment"
         android:label="@string/order_summary"
-        tools:layout="@layout/fragment_summary" />
+        tools:layout="@layout/fragment_summary" >
+        <action
+            android:id="@+id/action_summaryFragment_to_startFragment"
+            app:destination="@id/startFragment" />
+    </fragment>
 </navigation>
