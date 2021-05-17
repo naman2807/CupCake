@@ -20,6 +20,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context=".fragments.StartFragment">
     <data>
+        <variable
+            name="startFragment"
+            type="com.example.cupcake.fragments.StartFragment" />
 
     </data>
 
