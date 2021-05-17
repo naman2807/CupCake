@@ -64,6 +64,7 @@ class StartFragment : Fragment() {
 //        }
 
         // 2 way to apply onClickListener to buttons in layout file using listener binding
+        // Note: This way is applied to all fragments and their respective layout files.
         binding?.startFragment = this
 
     }
