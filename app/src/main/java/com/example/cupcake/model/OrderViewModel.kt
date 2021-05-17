@@ -44,6 +44,10 @@ class OrderViewModel : ViewModel() {
         return _flavor.value.isNullOrEmpty()
     }
 
+    private fun updatePrice(){
+
+    }
+
     private fun getPickOptions():List<String>{
         val options = mutableListOf<String>()
         val formatter = SimpleDateFormat("E, MMM d", Locale.getDefault())
