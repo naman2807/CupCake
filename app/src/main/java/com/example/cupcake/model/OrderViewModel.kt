@@ -52,6 +52,11 @@ class OrderViewModel : ViewModel() {
     // (which is 0 in this case).
     private fun updatePrice(){
         _price.value = (quantity.value ?: 0) *(PRICE_PER_CUP_CAKE)
+        if(_date.value.equals(dateOptions[0])){
+            val finalPrice = _price.value!! + PRICE_FOR_SAME_DAY_PICKUP
+            _price.value = finalPrice
+        }
+
     }
 
     private fun getPickOptions():List<String>{
