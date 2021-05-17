@@ -40,6 +40,7 @@ class OrderViewModel : ViewModel() {
 
     fun setDate(pickDate : String){
         _date.value = pickDate
+        updatePrice()
     }
 
     fun isFlavorSet() : Boolean{
