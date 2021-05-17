@@ -8,6 +8,7 @@ import java.time.format.DateTimeFormatter
 import java.util.*
 
 private const val PRICE_PER_CUP_CAKE = 2.00
+private const val PRICE_FOR_SAME_DAY_PICKUP = 3.00
 
 class OrderViewModel : ViewModel() {
     private val _quantity = MutableLiveData<Int>()
