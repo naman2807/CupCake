@@ -49,12 +49,9 @@ class PickupFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
-
-        binding?.apply {
-            nextButton.setOnClickListener { goToNextScreen() }
-        }
         binding?.viewModel = sharedViewModel
         binding?.lifecycleOwner = viewLifecycleOwner
+        binding?.pickupFragment = this
     }
 
     /**
