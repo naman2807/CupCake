@@ -26,7 +26,6 @@
     <string name="salted_caramel">Salted Caramel</string>
     <string name="coffee">Coffee</string>
     <string name="special_flavor">Special Flavor</string>
-    <string name="cancel">Cancel</string>
     <string name="next">Next</string>
     <string name="choose_pickup_date">Choose Pickup Date</string>
     <string name="order_summary">Order Summary</string>
@@ -43,4 +42,5 @@
     <string name="friday">Friday</string>
     <string name="saturday">Saturday</string>
     <string name="sunday">Sunday</string>
+    <string name="cancel">Cancel</string>
 </resources>
