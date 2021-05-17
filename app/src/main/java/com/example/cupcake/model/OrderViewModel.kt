@@ -44,6 +44,10 @@ class OrderViewModel : ViewModel() {
         return _flavor.value.isNullOrEmpty()
     }
 
+    // since the value of quantity.value could be null, use an elvis operator (?:) .
+    // The elvis operator (?:) means that if the expression on the left is not null, then use it.
+    // Otherwise if the expression on the left is null, then use the expression to the right of the elvis operator
+    // (which is 0 in this case).
     private fun updatePrice(){
         _price.value = (quantity.value ?: 0) *(PRICE_PER_CUP_CAKE)
     }
